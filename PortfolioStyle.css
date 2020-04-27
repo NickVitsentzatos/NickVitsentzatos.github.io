@@ -124,10 +124,9 @@ h3{
 }
 
 .ProfilePageContent #gradportrait{
-    transform: rotate(90deg);
     display: flex;
-    height: 252.43px;
-    width: 336.57px;
+    height: 336.57px;
+    width: 252.43px;
     margin: 33.2px auto;
 }
 
