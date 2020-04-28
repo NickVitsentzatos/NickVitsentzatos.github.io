@@ -14,17 +14,20 @@ body{
 }
 
 header h1{
+    max-width: 375px;
+    width: 100%;
     font-family: 'Handlee', cursive;
-    font-size: 70px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 nav{
     display: flex;
     margin: 0;
-    min-width: 1200px;
-    height: 50px;
-    max-height: 50px;
+    max-width: 375px;
+    width: 100%;
+    height: 20px;
+    max-height: 20px;
 }
 
 nav ul{
@@ -56,14 +59,14 @@ nav ul li a{
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 9px;
     height: 100%;
     width: 100%;
-    color: dodgerblue;
+    color: #1e90ff;
 }
 
 nav ul li a:hover{
-    color: dodgerblue;
+    color: #1e90ff;
     background-color: #d3d3a0;
 }
 
@@ -72,17 +75,17 @@ section{
     margin: 0 auto;
     flex-flow: column;
     text-align: center;
-    width: 1200px;
-    max-width: 1194px;
+    width: 375px;
+    max-width: 369px;
     border: solid;
     border-color:#d3d3a0;
 }
 
 /* Profile Page */
 h2{
-    color: dodgerblue;
+    color: #1e90ff;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 40px;
+    font-size: 15px;
     text-decoration: underline;
 }
 
@@ -101,33 +104,34 @@ h2{
 }
 
 h3{
-    color: dodgerblue;
+    color: #1e90ff;
     text-align: center;
     margin: 0;
     font-family: 'Josefin Slab', serif;
-    font-size: 35px;
+    font-size: 10px;
     text-decoration: underline;
 }
 
 .ProfilePageContent .Profile p{
-    font-size: 30px;
+    font-size: 10px;
     display: flex;
     max-width: 700px;
 }
 
 .ProfilePageContent #portrait{
     display: flex;
-    margin: 0;
+    margin: 0 5px;
     align-self: flex-end;
-    height: 401.39px;
-    width: 225.78px;
+    height: 133.79px;
+    width: 75.26px;
 }
 
 .ProfilePageContent #gradportrait{
     display: flex;
-    height: 336.57px;
-    width: 252.43px;
-    margin: 33.2px auto;
+    height: 112.19px;
+    width: 84.143px;
+    margin: 33.2px 5px;
+    margin-right: 15px;
 }
 
 .ProfilePageContent .Content ul{
@@ -141,7 +145,12 @@ h3{
 .ProfilePageContent .Content ul li{
     justify-self: flex-start;
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 9px;
+}
+
+.ProfilePageContent #ketoLogo{
+    height: 75px;
+    width: 75px;
 }
 
 /* Influences & Images Page */
@@ -153,22 +162,23 @@ h3{
 
 .projectsGallery div{
     z-index: -1;
-    width: 597px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 30px 0; 
+    margin:0; 
+    margin-bottom: 30px;
 }
 
 .projectsGallery div p{
-    font-size: 20px;
+    font-size: 10px;
     margin: 0 5px;
 }
 
 .projectsGallery img{
     margin: 30px 0;
-    max-width: 100%;
+    max-width: 98%;
 }
 
 .projectsGallery #pic1{
@@ -180,20 +190,23 @@ h3{
     justify-self: flex-end;
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    height: 392.883px;
-    width: 591px;
+    max-height: 392.883px;
+    height: 100%;
+    width: 98.9%;
     border: solid;
     border-color:#d3d3a0;
 }
 
 .projectsGallery #pic2{
+    max-width: 100%;
     grid-column: 2 / 2;
     grid-row: 2 / 2;
 }
 
 .projectsGallery #text2{
-    color: white;
-    height: 398px;
+    color:  #ffffff;
+    max-height: 398px;
+    height: 100%;
     background-color: #d3d3a0;
 }
 
@@ -206,23 +219,189 @@ h3{
     justify-self: flex-end;
     grid-column: 2 / 2;
     grid-row: 3 / 3;
-    height: 392px;
-    width: 591px;
+    max-height: 392px;
+    height: 100%;
+    width: 98.9%;
     border: solid;
     border-color:#d3d3a0;
 }
 
 .projectsGallery #pic4{
+    margin-top: 45px;
+    max-width: 100%;
     grid-column: 2 / 2;
     grid-row: 4 / 4;
 }
 
 .projectsGallery #text4{
-    color: white;
-    height: 335.2px;
+    color: #ffffff;
+    max-height: 335.2px;
+    height: 100%;
     background-color: #d3d3a0;
 }
 
 footer{
-    margin-bottom: 15px;
+    font-size: 9px;
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 650px){
+    header h1{
+        max-width: 650px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    nav{
+        max-width: 650px;
+        width: 100%;
+        height: 40px;
+        max-height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    section{
+        width: 650px;
+        max-width: 644px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .ProfilePageContent .Profile p{
+        font-size: 20px;
+    }
+
+    .ProfilePageContent .Content ul li{
+        font-size: 15px;
+    }
+
+    .ProfilePageContent #portrait{
+        margin: 0 10px;
+        height: 301.39px;
+        width: 168.78px;
+    }
+    
+    .ProfilePageContent #gradportrait{
+        height: 236.57px;
+        width: 177.43px;
+        margin: 33.2px 10px;
+        margin-right: 26px;
+    }
+
+    .ProfilePageContent #ketoLogo{
+        height: 225px;
+        width: 225px;
+    }
+
+    .projectsGallery div{
+        margin: 30px 0; 
+        margin-top: 0;
+    }
+
+    .projectsGallery div p{
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    .projectsGallery img{
+        margin: 30px 0;
+        max-width: 99.3%;
+    }
+
+    .projectsGallery #pic2{
+        max-width: 100%;
+    }
+    
+    .projectsGallery #pic4{
+        margin-top: 45px;
+        max-width: 100%;
+    }
+
+    footer{
+        font-size: 16px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header h1{
+        max-width: 1200px;
+        font-size: 70px;
+    }
+    
+    nav{
+        max-width: 1200px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+    }
+
+    section{
+        width: 1200px;
+        max-width: 1194px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 35px;
+    }
+
+    .ProfilePageContent .Profile p{
+        font-size: 30px;
+        max-width: 700px;
+    }
+
+    .ProfilePageContent .Content ul li{
+        font-size: 20px;
+    }
+
+    .ProfilePageContent #portrait{
+        margin: 0;
+        height: 401.39px;
+        width: 225.78px;
+    }
+    
+    .ProfilePageContent #gradportrait{
+        height: 336.57px;
+        width: 252.43px;
+        margin: 33.2px auto;
+    }
+
+    .ProfilePageContent #ketoLogo{
+        height: 225px;
+        width: 225px;
+    }
+
+    .projectsGallery div{
+        margin: 30px 0; 
+    }
+
+    .projectsGallery div p{
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .projectsGallery img{
+        margin: 30px 0;
+        max-width: 100%;
+    }
+    
+    .projectsGallery #pic4{
+        margin-top: 30px;
+    }
 }
