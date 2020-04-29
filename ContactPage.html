@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nicholas Vitsentzatos Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="PortfolioStyle.css">
+</head>
+
+    <body>
+        <header>
+            <h1>Hello my Name is Nicholas Vitsentzatos</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="https://github.com/NickVitsentzatos">GitHub Account</a></li>
+                <li><a href="Images&Influences.html">Influences/Images</a></li>
+                <li><a href="ContactPage.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <section class = "ContactPageContent">
+            <h2>Info needed to contact me</h2>
+
+            <form>
+              
+                <label for="FirstName">First name:</label>
+                <input type="text" name="FirstName">
+                                               
+                <label for="LastName">Last name:</label>
+                <input type="text" name="LastName">
+
+                <label for="Email">Email:</label>
+                <input type="email" name="Email">
+
+                <label for="Phone#">Phone Number:</label>
+                <input type="tel" id="Phone#" name="Phone#" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                <label for="ContactMethod">How would you like me to contact you?:</label>
+                <div class = "ContactChoices">
+                    <input type="radio" id="emailbutton" name="method">
+                    <label id ="email" for="email">Email</label><br>
+                </div>
+                <div class = "ContactChoices">
+                    <input type="radio" id="phonebutton" name="method">
+                    <label id ="phone" for="phone">Phone</label><br>
+                </div>
+
+                <label for="DropdownMenu">Province/Territory search dropdown:</label>
+                <select class="Province/Territory search dropdown">
+                    <option value="">Select a Province or Territory</option>
+                    <option value="AL">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MA">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PEI">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="YK">Yukon</option>
+                </select>
+
+                <label for="TextBox">Extra Details:</label><br>
+                <textarea name="extratext"></textarea>
+                
+                <input id = "sumbitbutton" type="submit" value="Submit">                                  
+            </form>
+        </section>
+    </body>
+</html>
